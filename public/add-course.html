@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand m-lg-2 fw-bolder" href="/">Snippit Guide</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end m-lg-3" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button onclick="handleLogout()" class="btn btn-dark">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr />
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4">Add New Course</h2>
+              <form id="courseForm">
+                <div class="mb-3">
+                  <label for="title" class="form-label">Course Title</label>
+                  <input type="text" class="form-control" id="title" required />
+                </div>
+
+                <div class="mb-3">
+                  <label for="description" class="form-label">Description</label>
+                  <textarea class="form-control" id="description" rows="4" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label for="tags" class="form-label">Tags (comma-separated)</label>
+                  <input type="text" class="form-control" id="tags" placeholder="e.g., Web Development, JavaScript" />
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100">Add Course</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/add-course.js"></script>
+  </body>
+</html>

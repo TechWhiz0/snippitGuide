@@ -1,0 +1,50 @@
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .badge-custom {
+    background-color: #000;
+    color: #fff;
+    padding: 0.4em 0.8em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .badge-custom:hover {
+    background-color: #333;
+  }
+  
+  .badge-custom.active {
+    background-color: #0066cc;
+  }
+  
+  .learn-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .learn-more svg {
+    transition: transform 0.2s;
+  }
+  
+  .learn-more:hover svg {
+    transform: translateX(4px);
+  }
+  
+  #tagFilters .badge-custom {
+    margin: 0.2rem;
+    cursor: pointer;
+  }
